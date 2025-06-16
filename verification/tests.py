@@ -11,26 +11,182 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": [[
+    "--.o.--",
+    "--o.o--",
+    "....o..",
+    "....o..",
+    "o.o.o..",
+    "--o.o--",
+    "--o.o--"]],
+            "answer": 2,
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
+            "input": [[
+    "--ooo--",
+    "--oo.--",
+    "ooo.ooo",
+    "oo...oo",
+    "ooo.ooo",
+    "--o.o--",
+    "--ooo--"]],
+            "answer": 11,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--oo.--",
+    "oo.o.oo",
+    "o..o..o",
+    "oo.o.oo",
+    "--oo.--",
+    "--ooo--"]],
+            "answer": 8,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--o.o--",
+    "oo.oooo",
+    "o..o..o",
+    "oooo.oo",
+    "--o.o--",
+    "--ooo--"]],
+            "answer": 10,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--o.o--",
+    "o.ooo.o",
+    ".o.o.o.",
+    "o.ooo.o",
+    "--oo.--",
+    "--ooo--"]],
+            "answer": 9,
         },
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": [[
+    "--ooo--",
+    "--.oo--",
+    ".ooooo.",
+    "oo...oo",
+    ".ooooo.",
+    "--oo.--",
+    "--ooo--"]],
+            "answer": 12,
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
+            "input": [[
+    "--ooo--",
+    "--o.o--",
+    "o.o.o.o",
+    ".o...o.",
+    "o.o.o.o",
+    "--o.o--",
+    "--ooo--"]],
+            "answer": 4,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--oo.--",
+    "ooo.ooo",
+    "o..o..o",
+    "ooo.ooo",
+    "--.oo--",
+    "--ooo--"]],
+            "answer": 10,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--ooo--",
+    "o.ooo.o",
+    ".o...o.",
+    "o.ooo.o",
+    "--ooo--",
+    "--ooo--"]],
+            "answer": 10,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--.oo--",
+    "oo.oo.o",
+    "o..o..o",
+    "o.oo.oo",
+    "--oo.--",
+    "--ooo--"]],
+            "answer": 10,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--o.o--",
+    "o.o.ooo",
+    "..o.o..",
+    "ooo.o.o",
+    "--o.o--",
+    "--ooo--"]],
+            "answer": 2,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--.oo--",
+    ".ooooo.",
+    ".o...o.",
+    ".ooooo.",
+    "--oo.--",
+    "--ooo--"]],
+            "answer": 10,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--ooo--",
+    "ooooooo",
+    "o.....o",
+    "ooooooo",
+    "--ooo--",
+    "--ooo--"]],
+            "answer": 6,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--ooo--",
+    "ooo.ooo",
+    "..o.o..",
+    "ooo.ooo",
+    "--ooo--",
+    "--ooo--"]],
+            "answer": 6,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--oo.--",
+    "oo.oo.o",
+    "o..o..o",
+    "o.oo.oo",
+    "--o.o--",
+    "--ooo--"]],
+            "answer": 11,
+        },
+        {
+            "input": [[
+    "--ooo--",
+    "--.oo--",
+    "o.ooooo",
+    ".o...o.",
+    "ooooo.o",
+    "--oo.--",
+    "--ooo--"]],
+            "answer": 10,
         },
     ]
 }

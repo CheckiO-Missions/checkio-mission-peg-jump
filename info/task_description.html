@@ -1,20 +1,27 @@
 <!-- Describe task in general -->
 <!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
 <p style="text-align: justify;">
-    Sum two passed ints
+   The Pin Game is a puzzle that consists of a board with cross-shaped holes, initially filled with pins, except for an empty hole in the center. The goal is to perform valid movements to remove the pins until only one remains. A move is valid if a pin (pivot) can jump over an adjacent pin (target) towards an empty hole (target), removing the target pin.
 </p>
 
 <p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    <img  title="example" src="{{MEDIA}}peg-jump.svg" alt="example" style="max-height: 400px"/>
 </p>
 
+<p style="text-align: justify;">
+    You are given a board configuration as a list of 7 strings, each representing a line on the board. Each string contains exactly 7 characters, with '-' (hyphen) in the first two and last two characters of lines 1, 2, 6 and 7, 'o' (lowercase letter) representing a pin, or '.' (dot) representing a hole.
+</p>
+
+<p style="text-align: justify;">
+    Your program should determine the number of possible valid moves.
+</p>
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two arguments. Both are ints.
+    <strong>Input:</strong> <span translate="repeat">{% if is_js %}Array{% else %}List{% endif %}</span> of strings <span translate="no">(str{% if is_js %}ing{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Output:</strong> Int. 
+    <strong>Output:</strong> Integer. 
 </p>
 
 
