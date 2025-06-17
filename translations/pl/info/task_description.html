@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+   Pin Game to łamigłówka składająca się z planszy z otworami w kształcie krzyża, początkowo wypełnionymi pinezkami, z wyjątkiem pustego otworu w środku. Celem jest wykonywanie prawidłowych ruchów w celu usunięcia kołków, aż pozostanie tylko jeden. Ruch jest prawidłowy, jeśli kołek (pivot) może przeskoczyć nad sąsiednim kołkiem (cel) w kierunku pustego otworu (cel), usuwając kołek docelowy.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}peg-jump.svg" alt="example" style="max-height: 400px"/>
+</p>
+
+<p style="text-align: justify;">
+    Otrzymują Państwo konfigurację planszy jako listę 7 ciągów, z których każdy reprezentuje linię na planszy. Każdy ciąg zawiera dokładnie 7 znaków, z '-' (myślnik) w pierwszych dwóch i ostatnich dwóch znakach linii 1, 2, 6 i 7, 'o' (mała litera) reprezentującym pinezkę lub '.' (kropka) reprezentującym otwór.
+</p>
+
+<p style="text-align: justify;">
+    Państwa program powinien określić liczbę możliwych prawidłowych ruchów.
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> {% if is_js %}Tablica{% else %}Lista{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> ciągów znaków <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Dane wyjściowe:</strong> Liczba całkowita. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
