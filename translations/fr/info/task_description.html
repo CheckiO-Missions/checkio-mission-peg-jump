@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+   Le jeu des épingles est un casse-tête qui consiste en un plateau avec des trous en forme de croix, initialement remplis d'épingles, à l'exception d'un trou vide au centre. Le but est d'effectuer des mouvements valides pour retirer les quilles jusqu'à ce qu'il n'en reste plus qu'une. Un mouvement est valide si une quille (pivot) peut sauter par-dessus une quille adjacente (cible) en direction d'un trou vide (cible), éliminant ainsi la quille cible.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}peg-jump.svg" alt="example" style="max-height: 400px"/>
+</p>
+
+<p style="text-align: justify;">
+    La configuration du plateau vous est donnée sous la forme d'une liste de 7 chaînes, chacune représentant une ligne du plateau. Chaque chaîne contient exactement 7 caractères, avec '-' (trait d'union) dans les deux premiers et les deux derniers caractères des lignes 1, 2, 6 et 7, 'o' (lettre minuscule) représentant une quille, ou '.' (point) représentant un trou.
+</p>
+
+<p style="text-align: justify;">
+    Votre programme doit déterminer le nombre de coups valables possibles.
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> de chaînes de caractères <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Entier. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
