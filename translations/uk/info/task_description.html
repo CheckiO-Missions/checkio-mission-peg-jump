@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+   Гра в кеглі - це головоломка, яка складається з дошки з хрестоподібними отворами, спочатку заповненими кеглями, за винятком порожнього отвору в центрі. Мета полягає в тому, щоб виконувати правильні рухи для видалення кеглів, поки не залишиться тільки одна. Хід вважається правильним, якщо кегля (стрижень) може перестрибнути через сусідню кеглю (мішень) у напрямку до порожнього отвору (мішені), видаляючи при цьому кеглю-мішень.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}peg-jump.svg" alt="example" style="max-height: 400px"/>
+</p>
+
+<p style="text-align: justify;">
+    Вам задано конфігурацію дошки у вигляді списку з 7 рядків, кожен з яких представляє лінію на дошці. Кожен рядок містить рівно 7 символів, причому '-' (дефіс) у перших двох і останніх двох символах рядків 1, 2, 6 і 7, 'o' (маленька літера) позначає кеглю, а '.' (крапка) - лунку.
+</p>
+
+<p style="text-align: justify;">
+    Ваша програма повинна визначити кількість можливих допустимих ходів.
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> рядків <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вивести:</strong> Ціле число. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
