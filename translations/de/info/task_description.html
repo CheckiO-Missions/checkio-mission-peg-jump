@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+   Das Pin Game ist ein Puzzle, das aus einem Brett mit kreuzförmigen Löchern besteht, die anfangs mit Stiften gefüllt sind, bis auf ein leeres Loch in der Mitte. Das Ziel ist es, die Stifte mit gültigen Bewegungen zu entfernen, bis nur noch ein Stift übrig ist. Ein Zug ist gültig, wenn eine Stecknadel (Drehpunkt) über eine benachbarte Stecknadel (Ziel) in Richtung eines leeren Lochs (Ziel) springen kann, wodurch die Zielstecknadel entfernt wird.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}peg-jump.svg" alt="example" style="max-height: 400px"/>
+</p>
+
+<p style="text-align: justify;">
+    Sie erhalten eine Spielbrettkonfiguration als Liste von 7 Zeichenfolgen, die jeweils eine Zeile auf dem Spielbrett darstellen. Jede Zeichenkette enthält genau 7 Zeichen, wobei '-' (Bindestrich) in den ersten beiden und letzten beiden Zeichen der Zeilen 1, 2, 6 und 7, 'o' (Kleinbuchstabe) für einen Stift oder '.' (Punkt) für ein Loch steht.
+</p>
+
+<p style="text-align: justify;">
+    Ihr Programm sollte die Anzahl der möglichen gültigen Züge ermitteln.
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> {% if is_js %}Array{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> von Zeichenketten <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ganzzahlig. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
