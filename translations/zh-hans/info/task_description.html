@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+   大头针游戏是一种益智游戏，它由一个带有十字形小孔的棋盘组成，最初小孔中都插满了大头针，只有中间的小孔是空的。游戏的目的是通过有效的移动来移除图钉，直到图钉只剩下一个为止。如果一个大头针（支点）能跳过相邻的大头针（目标），跳向空洞（目标），并移除目标大头针，则该动作有效。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}peg-jump.svg" alt="example" style="max-height: 400px"/>
+</p>
+
+<p style="text-align: justify;">
+    棋盘配置是由 7 个字符串组成的列表，每个字符串代表棋盘上的一行。每个字符串包含 7 个字符，其中第 1 行、第 2 行、第 6 行和第 7 行的前两个字符和后两个字符为"-"（连字符），"o"（小写字母）代表针，"."（点）代表孔。
+</p>
+
+<p style="text-align: justify;">
+    您的程序应确定可能的有效移动次数。
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>的字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>整数。 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
